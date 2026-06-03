@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from vector_engine import Vectors
 
-M = 10000
+M = 20000
 t_raw = np.linspace(0, 2*np.pi, M, endpoint=False)
 deltoid_points = (2*np.cos(t_raw) + np.cos(2*t_raw)) + 1j * (2*np.sin(t_raw) - np.sin(2*t_raw))
 
-n_vectors = 5
+n_vectors = 50
 scribe_mind = Vectors(points=deltoid_points, n=n_vectors)
 
 total_frames = 500
